@@ -1,0 +1,12 @@
+@model Wedding
+<h1>@Model.WedderOne & @Model.WedderTwo Wedding Day</h1>
+<button><a href="/dashboard">Dashboard</a></button>
+<form asp-action="Logout" asp-controller="Home" method="POST">
+    <input type="submit" value="Logout">
+</form>
+@foreach(var at in @ViewBag.info)
+{
+    <h3>Date: @at.Date</h3>
+    <br>
+    <h4>Guests Attending: </h4>
+}

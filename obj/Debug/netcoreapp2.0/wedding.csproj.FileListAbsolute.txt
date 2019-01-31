@@ -1,0 +1,11 @@
+/Users/marthagonzalez/Documents/Coding_Dojo/c#/ASP/entity/wedding/bin/Debug/netcoreapp2.0/wedding.deps.json
+/Users/marthagonzalez/Documents/Coding_Dojo/c#/ASP/entity/wedding/bin/Debug/netcoreapp2.0/wedding.runtimeconfig.json
+/Users/marthagonzalez/Documents/Coding_Dojo/c#/ASP/entity/wedding/bin/Debug/netcoreapp2.0/wedding.runtimeconfig.dev.json
+/Users/marthagonzalez/Documents/Coding_Dojo/c#/ASP/entity/wedding/bin/Debug/netcoreapp2.0/wedding.dll
+/Users/marthagonzalez/Documents/Coding_Dojo/c#/ASP/entity/wedding/bin/Debug/netcoreapp2.0/wedding.pdb
+/Users/marthagonzalez/Documents/Coding_Dojo/c#/ASP/entity/wedding/obj/Debug/netcoreapp2.0/wedding.csprojResolveAssemblyReference.cache
+/Users/marthagonzalez/Documents/Coding_Dojo/c#/ASP/entity/wedding/obj/Debug/netcoreapp2.0/wedding.csproj.CoreCompileInputs.cache
+/Users/marthagonzalez/Documents/Coding_Dojo/c#/ASP/entity/wedding/obj/Debug/netcoreapp2.0/wedding.AssemblyInfoInputs.cache
+/Users/marthagonzalez/Documents/Coding_Dojo/c#/ASP/entity/wedding/obj/Debug/netcoreapp2.0/wedding.AssemblyInfo.cs
+/Users/marthagonzalez/Documents/Coding_Dojo/c#/ASP/entity/wedding/obj/Debug/netcoreapp2.0/wedding.dll
+/Users/marthagonzalez/Documents/Coding_Dojo/c#/ASP/entity/wedding/obj/Debug/netcoreapp2.0/wedding.pdb

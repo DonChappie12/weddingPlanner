@@ -1,0 +1,25 @@
+<h1>Planned Your Wedding</h1>
+<button><a href="/dashboard">Dashboard</a></button>
+<form asp-action="Logout" asp-controller="Home" method="POST">
+    <input type="submit" value="Logout">
+</form>
+
+@model Wedding
+<form asp-action="CreateWedding" asp-controller="Home" method="POST">
+
+    <span asp-validation-for="WedderOne"></span>
+    <p>Wedder One <input asp-for="WedderOne"></p>
+    
+    <span asp-validation-for="WedderTwo"></span>
+    <p>Wedder Two <input asp-for="WedderTwo"></p>
+    
+    <!-- <input type="hidden" value=currUser.Id name="Date"> -->
+    <span asp-validation-for="Date"></span>
+    <h5>@ViewBag.date</h5>
+    <p>Date <input asp-for="Date"></p>
+    
+    <span asp-validation-for="WeddingAddress"></span>
+    <p>Wedding Adrress <input asp-for="WeddingAddress"></p>
+    
+    <button>Create</button>
+</form>

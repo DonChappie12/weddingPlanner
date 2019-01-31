@@ -1,0 +1,51 @@
+@model Wedding
+<h1>Welcome to the Wedding Planner</h1>
+<form asp-action="Logout" asp-controller="Home" method="POST">
+    <input type="submit" value="Logout">
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>Wedding</th>
+            <th>Date</th>
+            <th>Guest</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var wedd in @ViewBag.wedders)
+        {
+            bool guest = false;
+            <tr>
+                <td><a href="/info/@wedd.Id">@wedd.WedderOne & @wedd.WedderTwo</a></td>
+                <td>@wedd.Date</td>
+                <td>0</td>
+                @if(@ViewBag.id == @wedd.User_Id)
+                {
+                    <td><a href="/delete/@wedd.Id">Delete</a></td>
+                }
+                else
+                {
+                    @foreach(var at in @wedd.Attendee)
+                    {
+                        if(@at.User_Id == @ViewBag.id)
+                        {
+                            guest = true;
+                        }
+                    }
+                    @if( guest == true)
+                    {
+                        <td><a href="/unrvsp/@wedd.Id">Un-RVSP</a></td>
+                    }
+                    else
+                    {
+                        <td><a href="/rvsp/@wedd.Id">RVSP</a></td>
+                    }
+                }
+            </tr>
+        }
+    </tbody>
+</table>
+
+<button><a href="/new_wedding">New Wedding</a></button>

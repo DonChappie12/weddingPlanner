@@ -1,0 +1,26 @@
+﻿<h1>Register</h1>
+@model ValidateUser
+<div>
+    <form asp-action="Create" asp-controller="Home" method="POST">
+        <span asp-validation-for="FirstName"></span>
+        <p>First Name: <input asp-for="FirstName"></p>
+        <span asp-validation-for="LastName"></span>
+        <p>Last Name: <input asp-for="LastName"></p>
+        <span asp-validation-for="Email"></span>
+        <p>Email: <input asp-for="Email"></p>
+        <span asp-validation-for="Password"></span>
+        <p>Password: <input asp-for="Password"></p>
+        <span asp-validation-for="ConfirmPassword"></span>
+        <p>Confirm Password: <input asp-for="ConfirmPassword"></p>
+        <input type="submit" value="Register">
+    </form>
+</div>
+<div>
+    <h1>Login</h1>
+    <form asp-action="LoginIn" asp-controller="Home" method="POST">
+        <h3>@ViewBag.error</h3>
+        <p>Email: <input asp-for="Email"></p>
+        <p>Password: <input asp-for="Password"></p>
+        <input type="submit" value="Login">
+    </form>
+</div>
